@@ -22,10 +22,28 @@ body {
     padding: 1rem;
     background-color: white;
 }
-
+#navbar a{
+    text-decoration: none;
+    color: #7A6960;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font:30px 'magneto-bold', sans-serif;
+    
+}
 #navbar a img {
     width: 4rem;
     height: 4rem;
+}
+
+#navbar ul li{
+    display: block;
+    position: relative;
+    color: #4e4039;
+    padding: 10px 15px;
+    transition: 0.3s;
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
 }
 
 /* main estilos */
