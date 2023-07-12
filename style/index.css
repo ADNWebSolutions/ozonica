@@ -19,25 +19,27 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 1rem;
+    padding: .1rem;
     background-color: white;
 }
-#navbar a{
+
+#navbar a {
     text-decoration: none;
     color: #7A6960;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    font:30px 'magneto-bold', sans-serif;
-    
+    font: 30px 'magneto-bold', sans-serif;
+
 }
+
 #navbar a img {
     width: 4rem;
     height: 4rem;
 }
 
-#navbar ul li{
-    display: block;
+#navbar ul li {
+    display: none;
     position: relative;
     color: #4e4039;
     padding: 10px 15px;
@@ -48,16 +50,36 @@ body {
 
 /* main estilos */
 main {
-    padding-top: 10rem;
     min-height: 95vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
+/* welcome section */
+
+
+/* ozono section */
+
+/* caracteristicas section */
+
+/* productos section */
+
+/* clientes section */
+
+/* contacto section */
+
 /* footer estilos */
-footer{
+footer {
     display: flex;
     justify-content: center;
     bottom: 0;
+}
+
+/* Responsive styles - media queries & keyframes */
+@media screen and (min-width:768px) {
+    #navbar ul li {
+        display: inline;
+    }
 }
