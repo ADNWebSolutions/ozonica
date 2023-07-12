@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./assets/fonts/MAGNETOB.TTF"
-        rel="stylesheet" type="text/css" />
+    <link href="./assets/fonts/MAGNETOB.TTF" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="./style/index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
         integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-    <title>Ozonica</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Ozonica - Fábrica de ozonizadores</title>
 </head>
 
-<body>
+<div>
     <header id="navbar">
         <a href="#">
             <img src="./assets/logo.png" alt="">
@@ -28,9 +29,7 @@
     </header>
     <main>
         <section id="welcome">
-            <header>
-                <img src="./assets/welcome1.svg" alt="">
-            </header>
+
         </section>
 
         <section id="about">
@@ -38,7 +37,66 @@
         </section>
 
         <section id="services">
+            <header class="section-title">
+                <h3>Características</h3>
+                <p>Nuestros equipos cuentan con las siguientes características</p>
+            </header>
+            <div class="section-body">
+                <div class="icon-box">
+                    <div class="icon"><i class="fas fa-clock"></i></div>
+                    <h4 class="title"><a href="">Rápido</a></h4>
+                    <p class="description">
+                        Puede lograr una correcta desinfección de un dormitorio en 10
+                        minutos y de ambientes más grandes en 30 minutos. Puede
+                        mantenerse encendido todo el día en lugares donde circulan
+                        personas.
+                    </p>
+                </div>
+                <div class="icon-box">
+                    <div class="icon"><i class="fas fa-bolt"></i></div>
+                    <h4 class="title"><a href="">Bajo consumo</a></h4>
+                    <p class="description">
+                        Nuestros equipos son de bajo consumo, con solo 8 Watts
+                        alcanzan una buena producción de ozono.
+                    </p>
+                </div>
+                <div class="icon-box">
+                    <div class="icon"><i class="fas fa-tachometer-alt"></i></div>
+                    <h4 class="title"><a href="">Larga durabilidad</a></h4>
+                    <p class="description">
+                        Tiene larga vida útil, bajo mantenimiento y no hay que
+                        agregarle ningún producto químico.
+                    </p>
+                </div>
+                <div class="icon-box">
+                    <div class="icon"><i class="bx bx-world"></i></div>
+                    <h4 class="title"><a href="">No deja residuos tóxicos</a></h4>
+                    <p class="description">
+                        No afecta a humanos, animales ni plantas. Es utilizado desde
+                        hace tiempo por la industria alimentaria, la potabilización
+                        del agua y cada vez más en la medicina
+                    </p>
+                </div>
+            </div>
+        </section>
 
+
+        <section id="products">
+            <header class="section-title">
+                <h3>Productos</h3>
+                <h2></h2>
+            </header>
+            <div class="products-filter">
+                <ul>
+                    <li>Hogar</li>
+                    <li>Negocio</li>
+                </ul>
+            </div>
+            <div class="products-body">
+                <img src="./assets/1.jpg" alt="ozonizador de perfil">
+                <img src="./assets/2.jpg" alt="ozonizador de frente">
+                <img src="./assets/3.jpg" alt="cabina de ozono">
+            </div>
         </section>
 
         <section id="faq">
@@ -56,8 +114,8 @@
     <footer>
         <h2>footer</h2>
     </footer>
-    <script src="./scripts/index.js"></script>
-</body>
 
+    <script src="./scripts/index.js"></script>
+    </body>
 
 </html>

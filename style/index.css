@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* 
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+ */
+
 /* reset */
 * {
     margin: 0;
@@ -8,12 +15,15 @@
 
 body {
     background-color: #f8f7f7;
-    min-width: 100vw;
-    min-height: 100vh;
+    overflow-x: hidden;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    color: #212529;
 }
 
 /* navbar estilos */
 #navbar {
+    z-index: 100;
     position: fixed;
     width: 100%;
     display: flex;
@@ -30,7 +40,6 @@ body {
     align-items: center;
     justify-content: space-around;
     font: 30px 'magneto-bold', sans-serif;
-
 }
 
 #navbar a img {
@@ -50,21 +59,104 @@ body {
 
 /* main estilos */
 main {
-    min-height: 95vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+    padding: 0 2rem;
+    display: block;
+    padding-top: 18vh;
 }
 
 /* welcome section */
 
-
 /* ozono section */
 
 /* caracteristicas section */
+#services {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#services .section-body {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: baseline;
+}
+
+#services .section-title {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+#services .section-title h3 {
+    color: #C2B7B1;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+}
+
+#services .section-title p {
+    color: #4e4039;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#services .section-title p::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: #eb5d1e;
+    left: calc(50% - 30px);
+    margin-top: 1rem;
+}
+
+#services .icon-box {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 0 40px 0;
+    background: #fff;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+    transition: all 0.3s ease-in-out;
+    border-radius: 15px;
+    text-align: center;
+    border-bottom: 3px solid #fff;
+    display: flex;
+    flex-direction: column;
+    
+    gap: .5rem;
+    min-height: 20rem;
+}
+
+.icon-box .title a {
+    font-family: Raleway;
+    text-decoration: none;
+    color: #111111;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.icon-box .description {
+    font-weight: 400;
+    font-size: .938rem;
+    line-height: 2rem;
+}
+
+.icon-box .icon i {
+    font-size: 48px;
+    line-height: 1;
+    margin-bottom: 15px;
+    color: #ef7f4d;
+}
 
 /* productos section */
+.products-body img {
+    max-width: 100%;
+    height: auto;
+}
 
 /* clientes section */
 
@@ -81,5 +173,15 @@ footer {
 @media screen and (min-width:768px) {
     #navbar ul li {
         display: inline;
+    }
+
+    #services .section-body {
+        flex-wrap: wrap;
+
+    }
+
+    #services .section-body .icon-box {
+        max-width: 50%;
+        flex: 0 0 48%;
     }
 }
