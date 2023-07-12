@@ -185,3 +185,41 @@ footer {
         flex: 0 0 48%;
     }
 }
+
+
+/* ------------------------------- */
+/* ----- SCROLL ANIMATIONS ------- */
+/* ------------------------------- */
+
+.fade-in {
+    opacity: 0;
+}
+
+.fade-in.appear {
+    transition: 1s;
+    opacity : 1;
+}
+
+.from-left {
+    -webkit-transform: translateX(-10%);
+    transform: translateX(-10%);
+}
+
+.from-right {
+    -webkit-transform: translateX(10%);
+    transform: translateX(10%);
+}
+
+.from-left,
+.from-right {
+    transition: opacity 1s, transform 1s,
+    -webkit-transform 1s;
+    opacity: 0;
+}
+
+.from-left.appear,
+.from-right.appear {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 0.3;
+}
