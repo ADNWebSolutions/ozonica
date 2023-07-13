@@ -196,7 +196,7 @@ footer {
 }
 
 .fade-in.appear {
-    transition: 1s;
+    transition: 2s;
     opacity : 1;
 }
 
@@ -221,5 +221,5 @@ footer {
 .from-right.appear {
     -webkit-transform: translateX(0);
     transform: translateX(0);
-    opacity: 0.3;
+    opacity: 1;
 }
