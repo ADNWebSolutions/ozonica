@@ -4,6 +4,10 @@
 font-family: 'Open Sans', sans-serif;
 font-family: 'Raleway', sans-serif;
  */
+:root {
+    --background1: #fef8f5;
+    --background2: transparent;
+}
 
 /* reset */
 * {
@@ -14,7 +18,7 @@ font-family: 'Raleway', sans-serif;
 }
 
 body {
-    background-color: #f8f7f7;
+    background-color: #fff;
     overflow-x: hidden;
     width: 100%;
     font-family: 'Open Sans', sans-serif;
@@ -59,27 +63,38 @@ body {
 
 /* main estilos */
 main {
-    padding: 0 2rem;
     display: block;
-    padding-top: 18vh;
+}
+
+section {
+    min-height: 100vh;
+    width: 100%;
+    display: block;
 }
 
 /* welcome section */
+#welcome {
+    background-color: var(--background1);
+}
 
 /* ozono section */
+#about {
+    background-color: var(--background2);
+}
 
 /* caracteristicas section */
 #services {
     display: flex;
     flex-direction: column;
     text-align: center;
+    background-color: var(--background1);
 }
 
 #services .section-body {
     margin-top: 1rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: 1rem;
     justify-content: center;
     align-items: baseline;
 }
@@ -126,7 +141,6 @@ main {
     border-bottom: 3px solid #fff;
     display: flex;
     flex-direction: column;
-    
     gap: .5rem;
     min-height: 20rem;
 }
@@ -153,14 +167,91 @@ main {
 }
 
 /* productos section */
-.products-body img {
-    max-width: 100%;
+#products {
+    background-color: var(--background2);
+}
+
+#products .section-title {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+#products .section-title h3 {
+    color: #C2B7B1;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+}
+
+#products .section-title p {
+    color: #4e4039;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#products .section-title p::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: #eb5d1e;
+    left: calc(50% - 30px);
+    margin-top: 1rem;
+}
+
+#products .filter-container ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 1rem;
+    padding: 1rem;
+    font-weight: 600;
+}
+
+#products .filter-container ul li {
+    cursor: pointer;
+}
+
+#products .portfolio-container {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    transition: all 5s ease-in-out
+}
+
+#products .portfolio-wrap {
+    border-radius: 50px;
+    width: 96%;
+    max-width: 360px;
+    cursor: pointer;
+}
+
+#products .portfolio-wrap img {
+    width: 100%;
+    min-height: 100%;
     height: auto;
+    border-radius: 20px;
+}
+
+
+/* faq section */
+#faq {
+    background-color: var(--background1);
 }
 
 /* clientes section */
+#clients {
+    background-color: var(--background1);
+}
 
 /* contacto section */
+#contact {
+    background-color: var(--background2);
+}
 
 /* footer estilos */
 footer {
@@ -181,8 +272,9 @@ footer {
     }
 
     #services .section-body .icon-box {
-        max-width: 50%;
-        flex: 0 0 48%;
+        align-items: stretch;
+        max-width: 45%;
+        flex: 0 0 22%;
     }
 }
 
@@ -197,7 +289,7 @@ footer {
 
 .fade-in.appear {
     transition: 2s;
-    opacity : 1;
+    opacity: 1;
 }
 
 .from-left {
@@ -213,7 +305,7 @@ footer {
 .from-left,
 .from-right {
     transition: opacity 1s, transform 1s,
-    -webkit-transform 1s;
+        -webkit-transform 1s;
     opacity: 0;
 }
 
