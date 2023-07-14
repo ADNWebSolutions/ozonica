@@ -224,7 +224,6 @@ section {
 }
 
 #products .portfolio-wrap {
-    border-radius: 50px;
     width: 96%;
     max-width: 360px;
     cursor: pointer;
@@ -234,7 +233,7 @@ section {
     width: 100%;
     min-height: 100%;
     height: auto;
-    border-radius: 20px;
+    border-radius: 12px;
 }
 
 
@@ -302,8 +301,20 @@ footer {
     transform: translateX(10%);
 }
 
+.from-bottom {
+    -webkit-transform: translateY(20%);
+    transform: translateY(20%);
+}
+
+.from-top {
+    -webkit-transform: translateY(-10%);
+    transform: translateY(-10%);
+}
+
 .from-left,
-.from-right {
+.from-right,
+.from-bottom,
+.from-top {
     transition: opacity 1s, transform 1s,
         -webkit-transform 1s;
     opacity: 0;
@@ -313,5 +324,12 @@ footer {
 .from-right.appear {
     -webkit-transform: translateX(0);
     transform: translateX(0);
+    opacity: 1;
+}
+
+.from-bottom.appear,
+.from-top.appear {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
 }
