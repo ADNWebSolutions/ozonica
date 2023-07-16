@@ -80,14 +80,137 @@ section {
 }
 
 /* welcome section */
-#welcome {
+#welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: var(--background1);
-}
-
+    text-align: center;
+    }
+    .heroContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 60px 60px;
+    }
+    .heroText{
+    margin: 0px 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    }
+    .heroText h1{
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 56px;
+    color: #4e4039;
+    padding-bottom: 20px;
+    }
+    .heroText h2{
+    color: #a08f86;
+    margin-bottom: 50px;
+    font-size: 24px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+    }
+    .heroText a{
+    align-self: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 8px 28px;
+    border-radius: 3px;
+    border: none;
+    margin: 10px;
+    color: #fff;
+    background: #eb5d1e;
+    text-decoration: none;
+    color: #fff;
+    }
+    .heroText a:hover {
+    opacity: .8;
+    transition: 0.3s;
+    }
+    .heroImg{
+    display: flex;
+    justify-content: center;
+    }
+    .heroImg img {
+    width: 530px;
+    height: 400px;
+    }   
+    .shake-vertical {
+            animation: shake-vertical 10s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+    }
+    
 /* ozono section */
-#about {
-    background-color: var(--background2);
-}
+    #about{
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: center;
+        background-color: var(--background2);
+        border-bottom: 1px solid #f8f9fa88;
+        text-align: center;
+        padding-top: 0px;
+    }
+    .aboutContainer {
+        display: flex;
+        flex-direction: column;
+        background-color: #f8f9fa;
+    }
+    .divAboutImg {
+        display: flex;
+        align-items: center;
+    }
+    .divAboutImg img {
+        width: 530px;
+        height: 400px;
+    }
+    .divAboutText{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .aboutHeaderDiv{
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutHeaderDiv h3 {
+        font-weight: 700;
+        font-size: 34px;
+        color: #4e4039;
+    }
+    .aboutHeaderDiv p {
+        font-size: 15px;
+        color: #5a6570;
+        padding: 2rem;
+    }
+    .cardAboutContainer{
+        display: flex;
+        padding: 0rem 2rem 2rem 2rem;
+    }
+    .cardAbout {
+        width: 50%; 
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .cardAbout i{
+        font-size: 38px;
+        margin-top: 15px;
+        color: #f39e7a;
+    }
+    .cardAbout h4{
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 5px;
+        color: #7a6960;
+    }
+    .cardAbout p {
+        font-size: 15px;
+        color: #5a6570;
+        line-height: 1.6;
+    }
 
 /* caracteristicas section */
 #services {
@@ -336,6 +459,65 @@ footer {
         flex: 0 0 40%;
 
     }
+
+
+    #welcome {
+        flex-direction: row;
+        text-align: left;
+        }
+        .heroContainer {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 60px;
+        }
+        .heroText{
+        max-width: 50%;
+        padding: 60px 60px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        }
+        .heroText a{
+        align-self: flex-start;
+        }
+        .heroImg{
+        padding-left: 50px;
+        max-width: 50%;
+        align-items: center;
+        justify-content: end;
+        }
+        .heroImg img {
+        width: 500px;
+        height: 380px;
+        }  
+        
+
+        #about {
+        height: 100%;
+        padding-top: 0px;
+        }
+        .aboutContainer {
+         height: 100vh;
+        max-width: 100vw;
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: row;
+        background-color: #f8f9fa;
+        }
+        .divAboutImg {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        }
+        .divAboutImg img {
+        width: 560px;
+        height: 400px;
+        padding-right:80px;
+        }
+        .aboutHeaderDiv p{
+            text-align: left;
+        }
 }
 
 @media screen and (min-width:1024px) {
@@ -348,6 +530,30 @@ footer {
 
 }
 
+/*shake de la img del welcome*/
+@keyframes shake-vertical {
+    0%,
+    100% {
+              transform: translateY(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+              transform: translateY(-8px);
+    }
+    20%,
+    40%,
+    60% {
+              transform: translateY(8px);
+    }
+    80% {
+              transform: translateY(6.4px);
+    }
+    90% {
+              transform: translateY(-6.4px);
+    }
+  }
 
 /* ------------------------------- */
 /* ----- SCROLL ANIMATIONS ------- */
