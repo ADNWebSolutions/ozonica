@@ -19,3 +19,12 @@ window.onscroll = () => {
         }
     })
 }
+
+/* 
+Botón hamburguesa
+*/
+const burgerBtn = document.getElementById('burger')
+burgerBtn.addEventListener('click', () => {
+    burgerBtn.classList.toggle('open')
+})
+
