@@ -34,3 +34,10 @@ burgerBtn.addEventListener('click', () => {
     navBar.classList.toggle('dropdown')
 })
 
+/* 
+Opacity en botón toTop
+*/
+window.addEventListener("scroll", function () {
+    let toTop = document.getElementById("toTop");
+    toTop.classList.toggle("visible", window.scrollY > 0);
+});
