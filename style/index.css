@@ -557,6 +557,10 @@ section {
     padding: 60px 0;
 }
 
+#faq .accordion {
+    --bs-accordion-bg: var(--background1);
+}
+
 #faq .section-title {
     text-align: center;
     margin: 2rem 0;
