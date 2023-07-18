@@ -665,21 +665,20 @@ section {
 .slider::after {
     background: linear-gradient(to right, rgba(255, 255, 255, 0.795) 0%, rgba(255, 255, 255, 0) 100%);
     content: "";
-    height: 100px;
+    height: 10rem;
     position: absolute;
     width: 200px;
     z-index: 2;
+    top: 4.5rem;
 }
 
 .slider::after {
     right: 0;
-    top: 7rem;
     transform: rotateZ(180deg);
 }
 
 .slider::before {
     left: -2rem;
-    top: 7rem;
 }
 
 .slider ul {
