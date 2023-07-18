@@ -565,48 +565,36 @@ section {
 
 
 /* clientes section */
+#clients {
+    margin-top: 3rem;
+}
 
 .slider {
-    margin-top: 13rem;
+    margin-top: 10rem;
     height: 20rem;
     overflow: hidden;
     position: relative;
-    padding: 0 2rem;
     display: flex;
     justify-content: center;
-}
-
-/* .slider::before,
-.slider::after {
-    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-    content: "";
-    height: 10rem;
-    width: 800px;
-    z-index: 200;
-}
-
-.slider::after {
-    right: 0;
-    top: 0;
-    transform: rotateZ(180deg);
-}
-
-.slider::before {
-    left: 0;
-    top: 0;
-} */
-
-.slide-track {
-    animation: scrollBanner 5s linear infinite;
-    display: flex;
-    overflow: hidden;
-    width: calc(250px * 4);
-    gap: 4rem;
     filter: opacity(.6);
 }
 
-.slide img {
-    height: 10rem;
+.slider ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 90vw;
+    gap: 6rem;
+}
+
+.slider img {
+    height: 8rem;
+}
+
+.slider li {
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 
 /* contacto section */
