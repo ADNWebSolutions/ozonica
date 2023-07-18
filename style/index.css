@@ -560,7 +560,89 @@ section {
 /* faq section */
 #faq {
     background-color: var(--background1);
+    padding: 60px 0;
 }
+
+#faq .section-title {
+    text-align: center;
+    margin: 2rem 0;
+    padding-bottom: 2rem;
+}
+
+#faq .section-title h3 {
+    color: #C2B7B1;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+}
+
+#faq .section-title p {
+    color: #4e4039;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#faq .section-title p::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: #eb5d1e;
+    left: calc(50% - 30px);
+    margin-top: 1rem;
+}
+
+#faq .accordion-item {
+    border: none;
+}
+
+#faq .accordion-button {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+}
+
+#faq .accordion-button:hover {
+    color: #eb5d1e;
+}
+
+#faq .accordion-button:focus {
+    border: none;
+    box-shadow: none;
+}
+
+#faq .accordion-button:not(.collapsed) {
+    background-color: var(--background1);
+    box-shadow: none;
+}
+
+#faq .accordion-button:not(.collapsed) {
+    color: #eb5d1e;
+}
+
+#faq .accordion-button::after:active {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23eb5d1e'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+#faq .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='10' height='8' viewBox='0 0 16 16' fill='%23eb5d1e'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+#faq .accordion-button:hover::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23eb5d1e'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+#faq .accordion-body {
+    font-size: small;
+    padding: 0.5rem 2rem;
+}
+
+#accordionFlushExample ul {
+    list-style-type: circle;
+    margin-bottom: 0;
+}
+
 
 /* clientes section */
 #clients {
