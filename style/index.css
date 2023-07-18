@@ -6,14 +6,14 @@ font-family: 'Raleway', sans-serif;
  */
 :root {
     --background1: #fef8f5;
-    --background2: transparent;
+    --background2: #f8f9fa;
 }
 
 :target {
     padding-top: 4rem;
 }
 
-/* reset */
+/* reset y estilos generales */
 * {
     margin: 0;
     padding: 0;
@@ -22,15 +22,52 @@ font-family: 'Raleway', sans-serif;
 }
 
 body {
-    background-color: #fff;
+    background-color: var(--background1);
     overflow-x: hidden;
     width: 100%;
     font-family: 'Open Sans', sans-serif;
     color: #212529;
 }
 
+main section:nth-child(odd) {
+    background-color: var(--background1);
+}
+
+main section:nth-child(even) {
+    background-color: var(--background2);
+}
+
 .hidden {
     display: none;
+}
+
+.section-title {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.section-title h3 {
+    color: #C2B7B1;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+}
+
+.section-title p {
+    color: #4e4039;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.section-title p::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: #eb5d1e;
+    left: calc(50% - 30px);
+    margin-top: 1rem;
 }
 
 /* navbar estilos */
@@ -216,7 +253,6 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: var(--background1);
     text-align: center;
 }
 
@@ -289,7 +325,7 @@ section {
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
-    background-color: var(--background2);
+
     border-bottom: 1px solid #f8f9fa88;
     text-align: center;
     padding-top: 0px;
@@ -298,7 +334,6 @@ section {
 .aboutContainer {
     display: flex;
     flex-direction: column;
-    background-color: #f8f9fa;
 }
 
 .divAboutImg {
@@ -369,7 +404,7 @@ section {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: var(--background1);
+
 }
 
 #services .section-body {
@@ -379,35 +414,6 @@ section {
     gap: 1rem;
     justify-content: center;
     align-items: baseline;
-}
-
-#services .section-title {
-    text-align: center;
-    margin: 2rem 0;
-}
-
-#services .section-title h3 {
-    color: #C2B7B1;
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.5rem;
-}
-
-#services .section-title p {
-    color: #4e4039;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 2rem;
-    font-weight: 700;
-}
-
-#services .section-title p::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 60px;
-    height: 2px;
-    background: #eb5d1e;
-    left: calc(50% - 30px);
-    margin-top: 1rem;
 }
 
 #services .icon-box {
@@ -450,9 +456,7 @@ section {
 }
 
 /* productos section */
-#products {
-    background-color: var(--background2);
-}
+
 
 #products .section-title {
     text-align: center;
@@ -558,19 +562,54 @@ section {
 
 
 /* faq section */
-#faq {
-    background-color: var(--background1);
-}
+
 
 /* clientes section */
-#clients {
-    background-color: var(--background1);
+
+.slider {
+    margin-top: 13rem;
+    height: 20rem;
+    overflow: hidden;
+    position: relative;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* .slider::before,
+.slider::after {
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 10rem;
+    width: 800px;
+    z-index: 200;
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+} */
+
+.slide-track {
+    animation: scrollBanner 5s linear infinite;
+    display: flex;
+    overflow: hidden;
+    width: calc(250px * 4);
+    gap: 4rem;
+    filter: opacity(.6);
+}
+
+.slide img {
+    height: 10rem;
 }
 
 /* contacto section */
-#contact {
-    background-color: var(--background2);
-}
 
 /* botón volver arriba */
 #toTop {
@@ -715,7 +754,6 @@ footer {
         padding: 40px 20px;
         display: flex;
         flex-direction: row;
-        background-color: #f8f9fa;
     }
 
     .divAboutImg {
