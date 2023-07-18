@@ -413,10 +413,10 @@ section {
     margin: 0 0 40px 0;
     background: #fff;
     box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
-    transition: all 0.3s ease-in-out;
-    border-radius: 15px;
-    text-align: center;
     border-bottom: 3px solid #fff;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
     display: flex;
     flex-direction: column;
     gap: .5rem;
@@ -648,6 +648,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 80vh;
 }
 
 .slider {
@@ -706,6 +707,41 @@ section {
 }
 
 /* contacto section */
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#contact .map-container {
+    width: 85vw;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+    border-bottom: 3px solid #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: #d3531a 3px solid;
+    border-bottom: #d3531a 3px solid;
+    padding: 2rem;
+}
+
+#contact a {
+    text-decoration: none;
+    color: #d3531a;
+}
+
+#contact a i {
+    font-size: 2rem;
+}
+
+#contact .map-container .iframe-container {
+    width: 95%;
+    border-radius: 20px;
+    overflow: hidden;
+}
 
 /* botón volver arriba */
 #toTop {
