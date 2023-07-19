@@ -260,11 +260,9 @@ section {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
-    margin: 60px 60px;
 }
 
 .heroText {
-    margin: 0px 40px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -272,9 +270,8 @@ section {
 
 
 .heroText h1 {
-    font-size: 48px;
+    font-size: 28px;
     font-weight: bold;
-    line-height: 56px;
     color: #4e4039;
     padding: 20px 0px;
 }
@@ -282,10 +279,9 @@ section {
 .heroText h2 {
     color: #a08f86;
     margin-bottom: 50px;
-    font-size: 24px;
+    font-size: 18px;
     font-family: "Raleway", sans-serif;
     font-weight: 500;
-    line-height: 1.2;
 }
 
 .heroText a {
@@ -294,7 +290,6 @@ section {
     padding: 8px 28px;
     border-radius: 3px;
     border: none;
-    margin: 8px 10px;
     color: #fff;
     background: #eb5d1e;
     text-decoration: none;
@@ -912,6 +907,14 @@ footer i:hover {
         flex-direction: column;
     }
 
+    .heroText h1 {
+        font-size: 48px;
+    }
+    
+    .heroText h2 {
+        font-size: 24px;
+    }
+
     .heroText a {
         align-self: flex-start;
     }
@@ -921,11 +924,6 @@ footer i:hover {
         align-items: center;
         justify-content: end;
     }
-
-    .heroImg img {
-        max-width: 550px;
-    }
-
 
 
     #about {
@@ -946,8 +944,8 @@ footer i:hover {
         justify-content: start;
     }
 
-    .divAboutImg img {
-        max-width: 550px;
+    .divAboutImg img{
+        width: 1400px;
     }
 
     .aboutHeaderDiv p {
@@ -963,17 +961,6 @@ footer i:hover {
 
     }
 
-}
-
-@media screen and (min-width:425px) {
-    .heroImg img {
-        min-width: 150px;
-    }
-
-    .divAboutImg img {
-        min-width: 150px;
-        max-width: 470px;
-    }
 }
 
 /* keyframe carrousel */
